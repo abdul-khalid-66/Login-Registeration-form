@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --blue: #3498db;
+    --dark-blue: #2980b9;
+    --red: #e74c3c;
+    --dark-red: #c0392b;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+}
+
+.btn,
+.delete-btn {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.message {
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* important */
+.btn {
+    background-color: var(--blue);
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.delete-btn {
+    background-color: var(--red);
+}
+
+.delete-btn:hover {
+    background-color: var(--dark-red);
+}
+
+/* registration and login */
+.form-container {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container form {
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.form-container form h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.form-container form .box {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: var(--black);
+    margin: 10px 0;
+    background-color: var(--light-bg);
+}
+
+.form-container form p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--black);
+
+}
+
+.form-container form p a {
+    color: var(--red);
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}
+
+/* home section */
+.container {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .profile {
+
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.container .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+
+}
+
+.container .profile img:hover {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 5px;
+    transition: 2s;
+}
+
+.container .profile h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    color: var(--black);
+}
+
+.container .profile p {
+    margin-top: 25px;
+    color: var(--black);
+    font-size: 20px;
+}
+
+.container .profile p a {
+    color: var(--red)
+}
+
+.container .profile p a:hover {
+    text-decoration: underline;
+}
+
+/* update_profile  */
+.update-profile {
+    background-color: var(--light-bg);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-profile form {
+    width: 700px;
+    background-color: var(--white);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.update-profile form img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    box-shadow: var(--box-shadow);
+}
+.update-profile form img:hover {
+    image-rendering:optimizeQuality;
+}
+
+.update-profile form .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.update-profile form .flex .inputBox {
+    width: 49%;
+}
+
+.update-profile form .flex span {
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.update-profile form .flex input {
+    background-color: var(--light-bg);
+
+    padding: 12px 14px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: var(--black);
+}
+
+
+
+@media (max-width:650px){
+    .update-profile form .flex{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .update-profile form .flex .inputBox{
+        width: 100%;
+    }
+}
